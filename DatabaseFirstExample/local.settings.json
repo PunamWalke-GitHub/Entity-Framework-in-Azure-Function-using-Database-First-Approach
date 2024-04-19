@@ -1,0 +1,13 @@
+{
+    "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "AzureWebJobsDashboard": "UseDevelopmentStorage=true"
+  },
+  "ConnectionStrings": {
+    "BankEntities": {
+      "ConnectionString": "metadata=res://*/Model.BankModel.csdl|res://*/Model.BankModel.ssdl|res://*/Model.BankModel.msl;provider=System.Data.SqlClient;provider connection string='data source=PWDTLBT20202;initial catalog=functions-ef-sample;integrated security=True;MultipleActiveResultSets=True;App=EntityFramework'",
+      "ProviderName": "System.Data.EntityClient"
+    }
+  }
+}

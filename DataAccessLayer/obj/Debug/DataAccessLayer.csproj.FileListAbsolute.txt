@@ -1,0 +1,12 @@
+C:\Users\dtladmin\source\repos\Entity-Framework-in-Azure-Function-using-Database-First-Approach\DataAccessLayer\bin\Debug\DataAccessLayer.exe.config
+C:\Users\dtladmin\source\repos\Entity-Framework-in-Azure-Function-using-Database-First-Approach\DataAccessLayer\bin\Debug\DataAccessLayer.exe
+C:\Users\dtladmin\source\repos\Entity-Framework-in-Azure-Function-using-Database-First-Approach\DataAccessLayer\bin\Debug\DataAccessLayer.pdb
+C:\Users\dtladmin\source\repos\Entity-Framework-in-Azure-Function-using-Database-First-Approach\DataAccessLayer\bin\Debug\EntityFramework.dll
+C:\Users\dtladmin\source\repos\Entity-Framework-in-Azure-Function-using-Database-First-Approach\DataAccessLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\dtladmin\source\repos\Entity-Framework-in-Azure-Function-using-Database-First-Approach\DataAccessLayer\bin\Debug\EntityFramework.xml
+C:\Users\dtladmin\source\repos\Entity-Framework-in-Azure-Function-using-Database-First-Approach\DataAccessLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\dtladmin\source\repos\Entity-Framework-in-Azure-Function-using-Database-First-Approach\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.AssemblyReference.cache
+C:\Users\dtladmin\source\repos\Entity-Framework-in-Azure-Function-using-Database-First-Approach\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\dtladmin\source\repos\Entity-Framework-in-Azure-Function-using-Database-First-Approach\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CopyComplete
+C:\Users\dtladmin\source\repos\Entity-Framework-in-Azure-Function-using-Database-First-Approach\DataAccessLayer\obj\Debug\DataAccessLayer.exe
+C:\Users\dtladmin\source\repos\Entity-Framework-in-Azure-Function-using-Database-First-Approach\DataAccessLayer\obj\Debug\DataAccessLayer.pdb

@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\DataAccessLayer",
+    "\\DataAccessLayer\\bin\\Debug",
+    "\\DataAccessLayer\\bin\\Release",
+    "\\DataAccessLayer\\Models",
+    "\\DataAccessLayer\\obj\\Debug",
+    "\\DataAccessLayer\\obj\\Release"
+  ],
+  "SelectedNode": "\\DataAccessLayer\\Models",
+  "PreviewInSolutionExplorer": false
+}

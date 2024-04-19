@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BankModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Account">
+    <Key>
+      <PropertyRef Name="AccountId" />
+    </Key>
+    <Property Name="AccountId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Type" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Balance" Type="float" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AccountMapping">
+    <Key>
+      <PropertyRef Name="UserId" />
+      <PropertyRef Name="AccountId" />
+    </Key>
+    <Property Name="UserId" Type="int" Nullable="false" />
+    <Property Name="AccountId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FirstName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="LastName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="SSN" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_Bank_AccountMapping_Bank_Account_AccountId">
+    <End Role="Account" Type="Self.Account" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="AccountMapping" Type="Self.AccountMapping" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Account">
+        <PropertyRef Name="AccountId" />
+      </Principal>
+      <Dependent Role="AccountMapping">
+        <PropertyRef Name="AccountId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Bank_AccountMapping_Bank_User_UserId">
+    <End Role="User" Type="Self.User" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="AccountMapping" Type="Self.AccountMapping" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="AccountMapping">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="BankModelStoreContainer">
+    <EntitySet Name="Account" EntityType="Self.Account" Schema="Bank" store:Type="Tables" />
+    <EntitySet Name="AccountMapping" EntityType="Self.AccountMapping" Schema="Bank" store:Type="Tables" />
+    <EntitySet Name="User" EntityType="Self.User" Schema="Bank" store:Type="Tables" />
+    <AssociationSet Name="FK_Bank_AccountMapping_Bank_Account_AccountId" Association="Self.FK_Bank_AccountMapping_Bank_Account_AccountId">
+      <End Role="Account" EntitySet="Account" />
+      <End Role="AccountMapping" EntitySet="AccountMapping" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Bank_AccountMapping_Bank_User_UserId" Association="Self.FK_Bank_AccountMapping_Bank_User_UserId">
+      <End Role="User" EntitySet="User" />
+      <End Role="AccountMapping" EntitySet="AccountMapping" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
